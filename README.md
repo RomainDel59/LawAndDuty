@@ -15,7 +15,16 @@ Patrols. Traffic tickets. Proving himself one arrest at a time.
 Can Michael earn the respect he needs to become the high-flying cop 
 he dreams of being? Or will his past catch up with him?
 
-# Features
+---
+
+# Project Status
+
+Development has just started.  
+No gameplay features are implemented yet.
+
+---
+
+# Future Plans
 
 ## Career Progression
 Start as a rookie, earn respect, climb the ranks through dedication 
@@ -29,9 +38,9 @@ and performance.
 ## Customization
 LSPD uniform, police vehicles, equipment unlocked as you progress.
 
-# Future Plans
-
 (If you have any ideas, you are welcome to make suggestions in the issues section!)
+
+---
 
 # Note
 
