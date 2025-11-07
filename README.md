@@ -1,10 +1,35 @@
-# Law and Order
+# LSPD IS HIRING! (Sort of...)
 
-Become a cop in GTA V, patrol the streets, take on random missions, and climb the police hierarchy.
+After a life of crime, heists, and general chaos, Michael De Santa 
+wants to turn over a new leaf. His family's safe, he's rich, but 
+retirement is boring as hell. The adrenaline junkie needs action – 
+legal action this time.
 
-# Futures plans
+Problem? The LSPD laughs him out the door. "You? A cop? Get lost, criminal."
 
+Enter Dave Norton. One phone call later, Michael's got a badge... 
+and a very skeptical Police Chief who makes him start at the bottom.
 
+Patrols. Traffic tickets. Proving himself one arrest at a time.
+
+Can Michael earn the respect he needs to become the high-flying cop 
+he dreams of being? Or will his past catch up with him?
+
+# Features
+
+## Career Progression
+Start as a rookie, earn respect, climb the ranks through dedication 
+and performance.
+
+## Mission Variety
+- Patrols and traffic enforcement (early ranks)
+- Pursuits and arrests (mid ranks)  
+- Complex investigations (high ranks)
+
+## Customization
+LSPD uniform, police vehicles, equipment unlocked as you progress.
+
+# Future Plans
 
 (If you have any ideas, you are welcome to make suggestions in the issues section!)
 
@@ -22,19 +47,23 @@ Added references in IDE:
 - System.Windows.Forms
 - System.Drawing
 
-## Other mods
+## Required Mods
 
-These mods are required to make it work.
-- ScriptHookVDotNet 3.7.0 Nightly.46 (https://github.com/scripthookvdotnet/scripthookvdotnet-nightly/releases/tag/v3.7.0-nightly.46)
-- LemonUI 2.2 (https://github.com/LemonUIbyLemon/LemonUI/releases/tag/v2.2)
+These mods are required to make it work:
+- ScriptHookVDotNet 3.7.0 Nightly.46 ([Download](https://github.com/scripthookvdotnet/scripthookvdotnet-nightly/releases/tag/v3.7.0-nightly.46))
+- LemonUI 2.2 ([Download](https://github.com/LemonUIbyLemon/LemonUI/releases/tag/v2.2))
 
-# External resources
+## Story Requirement
+
+Completed GTA V story (Ending where Michael survives)
+
+# External Resources
 
 ## Credits
 
 The Persistence class comes from https://github.com/lucasvinbr/GTA5GangMod (thanks to Lucas Vinícius who allowed me to use it in my mod).
 
-## Usefull
+## Useful Development Resources
 
 Useful external resources:
 - https://gta.fandom.com/wiki/
