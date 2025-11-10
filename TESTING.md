@@ -72,7 +72,8 @@ To make these testable, we would need:
 
 **Expected Results**:
 - ✅ Dave Norton's SMS appears on screen (top-left notification)
-- ✅ Message text: *"Michael, c'est Dave. J'ai parlé au chef. Il accepte de te prendre, mais tu commences tout en bas - patrouilles, contraventions, le package complet. Viens au commissariat quand tu es prêt. À toi de faire tes preuves."*
+- ✅ Message text (English): *"Michael, it's Dave. Talked to the chief. He's willing to take you on, but you're starting at the bottom - patrols, tickets, the whole package. Come to the station when you're ready. Time to prove yourself."*
+- ✅ Message text (French): *"Michael, c'est Dave. J'ai parlé au chef. Il accepte de te prendre, mais tu commences tout en bas - patrouilles, contraventions, le package complet. Viens au commissariat quand tu es prêt. À toi de faire tes preuves."*
 - ✅ Character icon shows "Dave Norton"
 - ✅ Log file `scripts/Waldhari/LawAndDuty.log` contains:
   - "InitialMessageScript instantiated"
@@ -180,20 +181,28 @@ To make these testable, we would need:
 
 ### Test 5: Localization System
 
-**Purpose**: Verify that localization service loads the correct French message.
+**Purpose**: Verify that localization service loads the correct message based on system language.
 
 **Prerequisites**:
 - Fresh game save
-- `Properties/LawAndDuty/fr-FR/General.csv` exists with correct content
+- Localization files exist:
+  - `Properties/LawAndDuty/en-US/General.csv` (English)
+  - `Properties/LawAndDuty/fr-FR/General.csv` (French)
 
 **Steps**:
 1. Load game and trigger Dave's message
-2. Verify message content matches exactly
+2. Verify message content matches exactly based on system language
 
-**Expected Results**:
-- ✅ Message displays in French
-- ✅ Message text exactly matches `dave_initial_message` key value in CSV
+**Expected Results (English system)**:
+- ✅ Message displays: *"Michael, it's Dave. Talked to the chief. He's willing to take you on, but you're starting at the bottom - patrols, tickets, the whole package. Come to the station when you're ready. Time to prove yourself."*
+- ✅ Message text exactly matches `dave_initial_message` key value in `en-US/General.csv`
 - ✅ No placeholder keys (e.g., "dave_initial_message") displayed
+- ✅ Log shows: "Message retrieved for key 'dave_initial_message'"
+
+**Expected Results (French system)**:
+- ✅ Message displays: *"Michael, c'est Dave. J'ai parlé au chef. Il accepte de te prendre, mais tu commences tout en bas - patrouilles, contraventions, le package complet. Viens au commissariat quand tu es prêt. À toi de faire tes preuves."*
+- ✅ Message text exactly matches `dave_initial_message` key value in `fr-FR/General.csv`
+- ✅ No placeholder keys displayed
 - ✅ Log shows: "Message retrieved for key 'dave_initial_message'"
 
 **Failure Indicators**:
@@ -243,13 +252,15 @@ To make these testable, we would need:
 │   └── Waldhari/
 │       ├── Core.dll
 │       └── LawAndDuty/
+│           ├── en-US/
+│           │   └── General.csv
 │           └── fr-FR/
 │               └── General.csv
 ```
 
 ### Verification Checklist Before Testing
 - [ ] All DLL files present
-- [ ] Localization CSV file exists
+- [ ] Localization CSV files exist (both en-US and fr-FR)
 - [ ] ScriptHookV + ScriptHookVDotNet3 installed
 - [ ] .NET Framework 4.8 installed
 - [ ] Fresh game save or backup of save files
@@ -289,6 +300,7 @@ When reporting test failures, please include:
 3. **Save file content** (`scripts/Waldhari/LawAndDuty.xml`)
 4. **Steps to reproduce**
 5. **GTA V version** and mod versions
-6. **Expected vs actual behavior**
+6. **System language** (for localization issues)
+7. **Expected vs actual behavior**
 
 File issues at: [https://github.com/RomainDel59/LawAndDuty/issues](https://github.com/RomainDel59/LawAndDuty/issues)
