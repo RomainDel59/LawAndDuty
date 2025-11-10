@@ -17,6 +17,12 @@ he dreams of being? Or will his past catch up with him?
 
 ---
 
+## How to Start?
+
+Michael is bored at his poolside, enjoying retirement but craving action. Head to his pool area and wait for Dave Norton to contact you. Once you receive his message, your journey as an LSPD officer begins.
+
+---
+
 # Project Status
 
 Development has just started.  
@@ -42,6 +48,12 @@ LSPD uniform, police vehicles, equipment unlocked as you progress.
 
 ---
 
+# Testing
+
+For information about testing the mod (unit tests and integration tests), see [TESTING.md](TESTING.md).
+
+---
+
 # Note
 
 My native language is French, so I translated the localization into other languages with AI, but it may contain errors. Please help me fix it by submitting a merge request!
@@ -61,6 +73,7 @@ Added references in IDE:
 These mods are required to make it work:
 - ScriptHookVDotNet 3.7.0 Nightly.46 ([Download](https://github.com/scripthookvdotnet/scripthookvdotnet-nightly/releases/tag/v3.7.0-nightly.46))
 - LemonUI 2.2 ([Download](https://github.com/LemonUIbyLemon/LemonUI/releases/tag/v2.2))
+- Waldhari.Core ([Download](https://github.com/RomainDel59/Waldhari.Core/releases))
 
 ## Story Requirement
 
