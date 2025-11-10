@@ -39,6 +39,9 @@
         <Reference Include="ScriptHookVDotNet3">
           <HintPath>lib\ScriptHookVDotNet3.dll</HintPath>
         </Reference>
+        <Reference Include="Waldhari.Core">
+          <HintPath>lib\Waldhari.Core.dll</HintPath>
+        </Reference>
         <Reference Include="System"/>
         <Reference Include="System.Core"/>
         <Reference Include="System.Data"/>
@@ -47,8 +50,14 @@
         <Reference Include="System.Xml"/>
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="Class1.cs"/>
+        <Compile Include="Constants\Locations.cs" />
+        <Compile Include="Core\GameState.cs" />
+        <Compile Include="Core\LawAndDutyScript.cs" />
+        <Compile Include="Scripts\InitialMessageScript.cs" />
         <Compile Include="Properties\AssemblyInfo.cs"/>
+    </ItemGroup>
+    <ItemGroup>
+      <Content Include="Properties\LawAndDuty\fr-FR\General.csv" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
