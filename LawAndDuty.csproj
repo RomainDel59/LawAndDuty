@@ -57,6 +57,7 @@
         <Compile Include="Properties\AssemblyInfo.cs"/>
     </ItemGroup>
     <ItemGroup>
+      <Content Include="Properties\LawAndDuty\en-US\General.csv" />
       <Content Include="Properties\LawAndDuty\fr-FR\General.csv" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
